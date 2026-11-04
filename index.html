@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070D1A">
+  <meta name="description" content="Découvrez les projets data de Moise Hounmenou : réalisations, démonstrations et documentations.">
+  <title>Moise Hounmenou</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/projects.css">
+  <link rel="stylesheet" href="css/skills.css">
+  <script src="js/theme.js"></script>
+</head>
+<body>
+  <div id="loader" aria-hidden="true">
+    <div class="ld">
+      <div class="ld-mark">MH<span>.</span></div>
+      <div class="ld-pct" id="loaderPercent">0%</div>
+      <div data-i18n="loading">Chargement des données</div>
+      <div class="ld-bar"><i id="loaderBar"></i></div>
+    </div>
+  </div>
+  <button id="toTop" type="button" aria-label="Retour en haut" data-i18n-aria="backTop">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Accueil, Moise Hounmenou" data-i18n-aria="homeLabel">
+      <span class="brand-mark">MH</span>
+      <span class="brand-name">Moise <b>HOUNMENOU</b><small>DATA ANALYST · DATA MANAGER</small></span>
+    </a>
+    <nav class="site-nav" aria-label="Navigation principale" data-i18n-aria="navLabel">
+      <a href="#projets" data-i18n="navProjects">Projets</a>
+      <a href="#certifications" data-i18n="navCertifications">Certifications</a>
+      <a href="#competences" data-i18n="navSkills">Compétences</a>
+      <a href="#contact" data-i18n="navContact">Contact</a>
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="Thème clair ou sombre" data-i18n-aria="themeToggle">◐</button>
+      <button class="icon-btn" id="langBtn" type="button" aria-label="Switch to English">EN</button>
+      <a class="button button-outline" href="details.html"><span data-i18n="viewPortfolio">Voir tout mon parcours</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro band band-a" id="accueil">
+      <div class="intro-grid">
+        <figure class="intro-photo"><img src="https://drive.google.com/thumbnail?id=1lCz5Bw2gdRuR-WeWUOAgFkIlLvjXiK8Y&amp;sz=w2000" alt="Photo de Moise Hounmenou" data-i18n-alt="photoAlt" width="339" height="421" decoding="async"></figure>
+        <div class="intro-main">
+          <p class="hero-name">Moise <span>HOUNMENOU</span></p>
+          <span class="badge glass"><i aria-hidden="true"></i><span data-i18n="availability">Data Analyst · Disponible pour de nouveaux défis</span></span>
+          <h1><span data-i18n="heroTitle">Je transforme la donnée en décisions fiables.</span></h1>
+          <p class="intro-copy" data-i18n-html="introBio">Data Analyst &amp; Data Manager, je cumule <strong>3+ ans d’expérience en data</strong> (ETL, SQL, BigQuery, Power BI, qualité et gouvernance des données) auprès de grands comptes du retail, de l’assurance et du secteur public, des notions dans le trading et la finance après <strong>3 ans en développement d’applications</strong>. Ce triple profil me permet de construire des pipelines fiables et des outils que les équipes métier utilisent vraiment.</p>
+        </div>
+      </div>
+      <div class="intro-stats">
+        <div class="stat"><b data-i18n="stat1b">3+ ans</b><span data-i18n="stat1">d’expérience en data</span></div>
+        <div class="stat"><b data-i18n="stat2b">3 ans</b><span data-i18n="stat2">en développement d’applications</span></div>
+        <div class="stat"><b>1 TB+</b><span data-i18n="stat3">De données traitées</span></div>
+        <div class="stat"><b>10 k+</b><span data-i18n="stat4">Verbatims analysés</span></div>
+      </div>
+      <div class="quick-links" aria-label="CV et contact rapide" data-i18n-aria="quickLinks">
+        <a class="button button-primary" href="documents/CV_HOUNMENOU_DataManager.pdf" download="CV_HOUNMENOU_DataManager.pdf"><span data-i18n="downloadCv">Télécharger le CV</span></a>
+        <button class="button button-outline pdf-link" type="button" data-pdf="documents/CV_HOUNMENOU_DataManager.pdf" data-title="Mon CV" data-title-en="My CV"><span data-i18n="viewCv">Regarder le CV</span></button>
+        <a class="button button-outline" href="https://www.linkedin.com/in/moisehounmenou/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="button button-outline" href="mailto:moisekhounmenou@gmail.com">Email</a>
+        <a class="button button-outline button-phone" href="tel:+33751219215"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span>+33 7 51 21 92 15</span></a>
+        <a class="button button-outline" href="#contact" data-i18n="navContact">Contact</a>
+      </div>
+    </section>
+
+    <section class="method-section band band-b" id="methode" aria-labelledby="method-title">
+      <div class="section-heading">
+        <div>
+          <h2 id="method-title" data-i18n="methodTitle">Ma méthode</h2>
+          <p class="section-sub" data-i18n="methodSub">De la donnée brute à la décision, en 4 étapes.</p>
+        </div>
+      </div>
+      <ol class="method-grid">
+        <li class="method-step"><span class="method-num">01</span><span class="method-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></span><h3 data-i18n="m1t">Collecter</h3><p data-i18n="m1">Je récupère les données là où elles se trouvent : bases SQL, API, fichiers et outils métier.</p></li>
+        <li class="method-step"><span class="method-num">02</span><span class="method-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></span><h3 data-i18n="m2t">Fiabiliser</h3><p data-i18n="m2">Je nettoie, contrôle et documente pour que chaque chiffre soit juste et traçable.</p></li>
+        <li class="method-step"><span class="method-num">03</span><span class="method-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3M8 13l2-3 2 2 2-3"/></svg></span><h3 data-i18n="m3t">Analyser</h3><p data-i18n="m3">Je modélise et j’explore pour faire ressortir tendances, écarts et signaux faibles.</p></li>
+        <li class="method-step"><span class="method-num">04</span><span class="method-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M7 16v-4M12 16V8M17 16v-6"/></svg></span><h3 data-i18n="m4t">Décider</h3><p data-i18n="m4">Je restitue dans des tableaux de bord clairs qui aident les équipes à passer à l’action.</p></li>
+      </ol>
+    </section>
+
+    <section class="projects-section band band-a" id="projets" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <div>
+          <h2 id="projects-title" data-i18n="myProjects">Mes réalisations</h2>
+        </div>
+        <span class="section-count" id="projectCount">11</span>
+      </div>
+      <div class="project-filters" role="group" aria-label="Filtrer les réalisations" data-i18n-aria="filterLabel">
+        <button class="filter-btn is-active" type="button" data-filter="all" aria-pressed="true" data-i18n="filterAll">Tous</button>
+        <button class="filter-btn" type="button" data-filter="retail" aria-pressed="false" data-i18n="filterRetail">Retail</button>
+        <button class="filter-btn" type="button" data-filter="apps" aria-pressed="false" data-i18n="filterApps">Applications</button>
+        <button class="filter-btn" type="button" data-filter="finance" aria-pressed="false" data-i18n="filterFinance">Finance</button>
+        <button class="filter-btn" type="button" data-filter="crypto" aria-pressed="false" data-i18n="filterCrypto">Crypto</button>
+      </div>
+      <div class="projects-grid" id="projectsGrid">
+        <article class="project-card" data-category="retail">
+          <div class="project-visual project-media">
+            <button class="project-preview" type="button" aria-label="Agrandir l’aperçu" data-i18n-aria="openPreview" data-title="Aperçu — Superstore Sales Dashboard" data-title-en="Preview — Superstore Sales Dashboard">
+              <img src="Video/Ventes_dashboard.gif" alt="Aperçu animé — Superstore Sales Dashboard" data-i18n-alt="superstoreVisual" loading="lazy" decoding="async">
+            </button>
+            <span class="visual-caption">SUPERSTORE · SALES BI</span>
+          </div>
+          <div class="project-copy">
+            <p class="project-label" data-i18n="superstoreLabel">Retail · Business Intelligence</p>
+            <h3 data-i18n="superstoreTitle">Superstore Sales Dashboard</h3>
+            <p class="project-description" data-i18n="superstoreDescription">Pilotage commercial avec ventes, marges et tendances par région, catégorie et client, et des KPI clairs pour décider vite.</p>
+            <ul class="tags" aria-label="Thématiques" data-i18n-aria="topicsLabel"><li>Power BI</li><li data-i18n="retailTag">Retail</li><li data-i18n="businessIntelligenceTag">Business Intelligence</li></ul>
+            <div class="project-actions">
+              <button class="button button-outline project-unavailable" type="button" disabled data-i18n="projectOffline">Projet temporairement indisponible</button>
+              <button class="button button-outline pdf-link" type="button" data-pdf="https://drive.google.com/file/d/1LHRYBp94tVhcvvUvdY4vCiAQpKVD4JyP/preview" data-title="Documentation — Superstore Sales Dashboard" data-title-en="Documentation — Superstore Sales Dashboard"><span data-i18n="readPdfShort">Documentation FR</span></button>
+              <button class="button button-outline pdf-link" type="button" data-pdf="https://drive.google.com/file/d/1jLoIKhgKdbRhUL5yGdy9sBIs_zBYCtEr/preview" data-title="Documentation en anglais — Superstore Sales Dashboard" data-title-en="English documentation — Superstore Sales Dashboard"><span data-i18n="readEnglishShort">Documentation EN</span></button>
+            </div>
+          </div>
+        </article>
+        <article class="project-card" data-category="retail">
+          <div class="project-visual project-media">
+            <button class="project-preview" type="button" aria-label="Agrandir l’aperçu" data-i18n-aria="openPreview" data-title="Aperçu — Electronics" data-title-en="Preview — Electronics">
+              <img src="Video/Elecronics.gif" alt="Aperçu animé du projet Electronics" data-i18n-alt="electronicsVisual" loading="lazy" decoding="async">
+            </button>
+            <span class="visual-caption">ELECTRONICS · SALES ANALYSIS</span>
+          </div>
+          <div class="project-copy">
+            <p class="project-label" data-i18n="electronicsLabel">Retail · Analyse commerciale</p>
+            <h3 data-i18n="electronicsTitle">Electronics</h3>
+            <p class="project-description" data-i18n="electronicsDescription">Analyse des ventes d’équipements électroniques pour suivre le chiffre d’affaires et la performance commerciale.</p>
+            <ul class="tags" aria-label="Thématiques" data-i18n-aria="topicsLabel"><li data-i18n="retailTag">Retail</li><li data-i18n="commercialAnalysisTag">Analyse commerciale</li><li data-i18n="salesTag">Ventes</li></ul>
+            <div class="project-actions">
+              <button class="button button-outline project-unavailable" type="button" disabled data-i18n="projectOffline">Projet temporairement indisponible</button>
+              <button class="button button-outline pdf-link" type="button" data-pdf="https://drive.google.com/file/d/12fWbb0ObjIy57vDtaaidnVjySppKSbWY/preview" data-title="Documentation — Electronics" data-title-en="Documentation — Electronics"><span data-i18n="readPdfShort">Documentation FR</span></button>
+              <button class="button button-outline pdf-link" type="button" data-pdf="https://drive.google.com/file/d/1D4cua8gPNVy_SMHY9nY0rr61OzN3pAbk/preview" data-title="Documentation en anglais — Electronics" data-title-en="English documentation — Electronics"><span data-i18n="readEnglishShort">Documentation EN</span></button>
+            </div>
+          </div>
+        </article>
+        <article class="project-card" data-category="apps">
+          <div class="project-visual project-media">
+            <button class="project-video" type="button" data-video="Video/Postula_voix_off.mp4" data-title="Présentation vidéo — Postula" data-title-en="Video presentation — Postula" aria-label="Lire la vidéo de présentation de Postula" data-i18n-aria="playProjectVideo">
+              <video class="project-video-preview" data-preview-src="Video/Postula_voix_off.mp4" muted loop playsinline preload="none" aria-hidden="true"></video>
+              <span class="video-play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+            </button>
+            <span class="visual-caption">POSTULA · PROJET</span>
+          </div>
+          <div class="project-copy">
+            <p class="project-label" data-i18n="postulaLabel">Application · Gestion des candidatures</p>
+            <h3 data-i18n="postulaTitle">Postula</h3>
+            <p class="project-description" data-i18n="postulaDescription">Postula accompagne la recherche d’emploi en aidant à organiser ses candidatures et à suivre ses démarches au même endroit.</p>
+            <ul class="tags" aria-label="Thématiques" data-i18n-aria="topicsLabel"><li data-i18n="postulaTag1">Application</li><li data-i18n="aiTag">IA</li><li data-i18n="pythonTag">Python</li><li data-i18n="dataTag">Data</li></ul>
+            <div class="project-actions">
+              <a class="button button-primary project-link" data-project="postula" href="https://postula.streamlit.app/" target="_blank" rel="noopener"><span data-i18n="viewProject">Test en ligne</span></a>
+              <button class="button button-outline pdf-link" type="button" data-pdf="https://drive.google.com/file/d/16yP9r-Zgd-79KfpxraExS8O5YuQ9NIop/preview" data-title="Documentation — Postula" data-title-en="Documentation — Postula"><span data-i18n="readPdfShort">Documentation FR</span></button>
+              <button class="button button-outline pdf-link" type="button" data-pdf="https://drive.google.com/file/d/182m0UicEpI_qhLWHOzccg9_hGJDfsW9g/preview" data-title="Documentation en anglais — Postula" data-title-en="English documentation — Postula"><span data-i18n="readEnglishShort">Documentation EN</span></button>
+              <a class="button button-outline github-link" href="#" target="_blank" rel="noopener"><span data-i18n="viewCode">Code sur GitHub</span></a>
+            </div>
+          </div>
+        </article>
+        <article class="project-card" data-category="apps">
+          <div class="project-visual project-media">
+            <button class="project-video" type="button" data-video="Video/Cleaner_Dataset_voix_off.mp4" data-title="Présentation vidéo — Cleaner Dataset" data-title-en="Video presentation — Cleaner Dataset" aria-label="Lire la vidéo de présentation de Cleaner Dataset" data-i18n-aria="playProjectVideo">
+              <video class="project-video-preview" data-preview-src="Video/Cleaner_Dataset_voix_off.mp4" muted loop playsinline preload="none" aria-hidden="true"></video>
+              <span class="video-play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+            </button>
+            <span class="visual-caption">DATA · CLEANING</span>
+          </div>
+          <div class="project-copy">
+            <p class="project-label" data-i18n="cleanerDatasetLabel">Application · Préparation des données</p>
+            <h3 data-i18n="cleanerDatasetTitle">Cleaner Dataset</h3>
+            <p class="project-description" data-i18n="cleanerDatasetDescription">Cleaner Dataset prépare les jeux de données pour l’analyse en facilitant leur nettoyage, leur structuration et la vérification de leur qualité.</p>
+            <ul class="tags" aria-label="Thématiques" data-i18n-aria="topicsLabel"><li data-i18n="aiTag">IA</li><li data-i18n="dataTag">Data</li><li data-i18n="pythonTag">Python</li><li data-i18n="dataCleaningTag">Nettoyage des données</li></ul>
+            <div class="project-actions">
+              <a class="button button-primary project-link" data-project="cleaner-dataset" href="https://cleaner-dataset.streamlit.app/" target="_blank" rel="noopener"><span data-i18n="viewProject">Test en ligne</span></a>
+              <button class="button button-outline pdf-link" type="button" data-pdf="https://drive.google.com/file/d/1KpvA0GJCwx-2ccYJvKNHCCNq0cQhArbx/preview" data-title="Documentation — Cleaner Dataset" data-title-en="Documentation — Cleaner Dataset"><span data-i18n="readPdfShort">Documentation FR</span></button>
+              <button class="button button-outline pdf-link" type="button" data-pdf="https://drive.google.com/file/d/1WVbxsUIY_gU5aV0CfDiro5u3hgnYgWvx/preview" data-title="Documentation en anglais — Cleaner Dataset" data-title-en="English documentation — Cleaner Dataset"><span data-i18n="readEnglishShort">Documentation EN</span></button>
+            </div>
+          </div>
+        </article>
+        <article class="project-card" data-category="finance">
+          <div class="project-visual project-media">
+            <button class="project-preview" type="button" aria-label="Agrandir l’aperçu" data-i18n-aria="openPreview" data-title="Aperçu — Analyse boursière" data-title-en="Preview — Stock Market Analysis">
+              <img src="Video/Analyse_Boursiere_effet.gif" alt="Aperçu animé — Analyse boursière" data-i18n-alt="stockAnalysisVisual" loading="lazy" decoding="async">
+            </button>
+            <span class="visual-caption">STOCK MARKET ANALYSIS</span>
+          </div>
+          <div class="project-copy">
+            <p class="project-label" data-i18n="stockAnalysisLabel">Finance · Analyse boursière</p>
+            <h3 data-i18n="stockAnalysisTitle">Analyse boursière</h3>
+            <p class="project-description" data-i18n="stockAnalysisDescription">Une analyse des marchés financiers qui met en perspective les indicateurs boursiers et leurs évolutions afin de mieux repérer les tendances.</p>
+            <ul class="tags" aria-label="Thématiques" data-i18n-aria="topicsLabel"><li>Power BI</li><li data-i18n="financialAnalysisTag">Analyse financière</li><li data-i18n="marketAnalysisTag">Marchés financiers</li></ul>
+            <div class="project-actions">
+              <button class="button button-outline project-unavailable" type="button" disabled data-i18n="projectOffline">Projet temporairement indisponible</button>
+              <button class="button button-outline pdf-link" type="button" data-pdf="https://drive.google.com/file/d/1gwKzDVo55R82Yqz_lcr3azZsa535AUKF/preview" data-title="Documentation — Analyse boursière" data-title-en="Documentation — Stock Market Analysis"><span data-i18n="readPdfShort">Documentation FR</span></button>
+              <button class="button button-outline pdf-link" type="button" data-pdf="https://drive.google.com/file/d/1YW32-E1uFcLA8ovrdOmWm2T_e_TY4cY4/preview" data-title="Documentation en anglais — Analyse boursière" data-title-en="English documentation — Stock Market Analysis"><span data-i18n="readEnglishShort">Documentation EN</span></button>
+            </div>
+          </div>
+        </article>
+        
+        
+        <article class="project-card" data-category="crypto">
+          <div class="project-visual project-media">
+            <button class="project-preview" type="button" aria-label="Agrandir l’aperçu" data-i18n-aria="openPreview" data-title="Aperçu — Crypto Market Dashboard" data-title-en="Preview — Crypto Market Dashboard">
+              <img src="Video/Crypto_Market_Dashboard.gif" alt="Aperçu animé — Crypto Market Dashboard" data-i18n-alt="cryptoVisual" loading="lazy" decoding="async">
+            </button>
+            <span class="visual-caption">CRYPTO · POWER BI</span>
+          </div>
+          <div class="project-copy">
+            <p class="project-label" data-i18n="cryptoLabel">Projet data · Analyse &amp; visualisation</p>
+            <h3 data-i18n="cryptoTitle">Crypto Market Dashboard</h3>
+            <p class="project-description" data-i18n="cryptoDescription">Suivi du marché crypto dans Power BI : cours, capitalisations et volumes des principaux actifs, avec des filtres interactifs pour comparer les tendances.</p>
+            <ul class="tags" aria-label="Thématiques" data-i18n-aria="topicsLabel"><li>Power BI</li><li data-i18n="cryptoTagAnalysis">Analyse de données</li><li data-i18n="cryptoTagMarket">Marché crypto</li></ul>
+            <div class="project-actions">
+              <button class="button button-outline project-unavailable" type="button" disabled data-i18n="projectOffline">Projet temporairement indisponible</button>
+              <button class="button button-outline pdf-link" type="button" data-pdf="https://drive.google.com/file/d/1FCPt8CflxMTWln3AIwjHwPy1qtYpyQh9/preview" data-title="Documentation — Crypto Market Dashboard" data-title-en="Documentation — Crypto Market Dashboard"><span data-i18n="readPdfShort">Documentation FR</span></button>
+              <button class="button button-outline pdf-link" type="button" data-pdf="https://drive.google.com/file/d/12OybmcBVV4RPu1uZQ3cwXlhdlCGCBGL-/preview" data-title="Documentation en anglais — Crypto Market Dashboard" data-title-en="English documentation — Crypto Market Dashboard"><span data-i18n="readEnglishShort">Documentation EN</span></button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="project-card" data-category="apps">
+          <div class="project-visual project-media">
+            <button class="project-video" type="button" data-video="Video/AI_Data_Analyst_voix_off.mp4" data-title="Présentation vidéo — Agent interpréteur de fichiers" data-title-en="Video presentation — File Interpreter Agent" aria-label="Lire la vidéo de présentation de l’agent interpréteur de fichiers" data-i18n-aria="playProjectVideo">
+              <video class="project-video-preview" data-preview-src="Video/AI_Data_Analyst_voix_off.mp4" muted loop playsinline preload="none" aria-hidden="true"></video>
+              <span class="video-play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+            </button>
+            <span class="visual-caption">IA · ANALYSE DE FICHIERS</span>
+          </div>
+          <div class="project-copy">
+            <p class="project-label" data-i18n="fileInterpreterLabel">Application · Analyse et synthèse de fichiers</p>
+            <h3 data-i18n="fileInterpreterTitle">Agent interpréteur de fichiers</h3>
+            <p class="project-description" data-i18n="fileInterpreterDescription">Cet agent IA analyse les fichiers transmis pour en extraire les informations utiles et rendre leurs résultats plus faciles à comprendre et à exploiter.</p>
+            <ul class="tags" aria-label="Thématiques" data-i18n-aria="topicsLabel"><li data-i18n="aiTag">IA</li><li data-i18n="dataTag">Data</li><li data-i18n="pythonTag">Python</li><li data-i18n="fileAnalysisTag">Analyse de fichiers</li></ul>
+            <div class="project-actions">
+              <a class="button button-primary project-link" data-project="file-interpreter" href="https://agent-interpreteur-resultat-fichier.streamlit.app/" target="_blank" rel="noopener"><span data-i18n="viewProject">Test en ligne</span></a>
+              <button class="button button-outline pdf-link" type="button" data-pdf="https://drive.google.com/file/d/1dHiFcADaaeFPy1AsK6iK1fL-ph806Y2G/preview" data-title="Documentation — Agent interpréteur de fichiers" data-title-en="Documentation — File Interpreter Agent"><span data-i18n="readPdfShort">Documentation FR</span></button>
+              <button class="button button-outline pdf-link" type="button" data-pdf="https://drive.google.com/file/d/11bOdjZtt2QAGb-0zRK8d1T-JtTMkXRHy/preview" data-title="Documentation en anglais — Agent interpréteur de fichiers" data-title-en="English documentation — File Interpreter Agent"><span data-i18n="readEnglishShort">Documentation EN</span></button>
+            </div>
+          </div>
+        </article>
+        <article class="project-card" data-category="apps">
+          <div class="project-visual project-media">
+            <button class="project-video" type="button" data-video="Video/Job_Intelligence_voix_off.mp4" data-title="Présentation vidéo — Job Intelligence" data-title-en="Video presentation — Job Intelligence" aria-label="Lire la vidéo de présentation de Job Intelligence" data-i18n-aria="playProjectVideo">
+              <video class="project-video-preview" data-preview-src="Video/Job_Intelligence_voix_off.mp4" muted loop playsinline preload="none" aria-hidden="true"></video>
+              <span class="video-play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+            </button>
+            <span class="visual-caption">JOB INTELLIGENCE · IA</span>
+          </div>
+          <div class="project-copy">
+            <p class="project-label" data-i18n="jobIntelligenceLabel">Application · Recherche et ciblage d’offres</p>
+            <h3 data-i18n="jobIntelligenceTitle">Job Intelligence</h3>
+            <p class="project-description" data-i18n="jobIntelligenceDescription">Job Intelligence met l’intelligence artificielle au service de la recherche d’emploi pour aider à explorer les opportunités et mieux cibler ses candidatures.</p>
+            <ul class="tags" aria-label="Thématiques" data-i18n-aria="topicsLabel"><li data-i18n="postulaTag1">Application</li><li data-i18n="aiTag">IA</li><li data-i18n="pythonTag">Python</li><li data-i18n="dataTag">Data</li></ul>
+            <div class="project-actions">
+              <button class="button button-outline project-unavailable" type="button" disabled data-i18n="projectOffline">Projet temporairement indisponible</button>
+              <button class="button button-outline pdf-link" type="button" data-pdf="https://drive.google.com/file/d/18N-Xh66dOp66oMhGDjyzhsuHSvLMcEYG/preview" data-title="Documentation — Job Intelligence" data-title-en="Documentation — Job Intelligence"><span data-i18n="readPdfShort">Documentation FR</span></button>
+              <button class="button button-outline pdf-link" type="button" data-pdf="https://drive.google.com/file/d/1il0WrYUZm_AO5MAVZgNbAqOEFFjIFp1j/preview" data-title="Documentation en anglais — Job Intelligence" data-title-en="English documentation — Job Intelligence"><span data-i18n="readEnglishShort">Documentation EN</span></button>
+            </div>
+          </div>
+        </article>
+        <article class="project-card" data-category="finance">
+          <div class="project-visual project-media">
+            <button class="project-preview" type="button" aria-label="Agrandir l’aperçu" data-i18n-aria="openPreview" data-title="Aperçu — Actions IA NASDAQ" data-title-en="Preview — NASDAQ AI Stocks">
+              <img src="Video/Actions_IA_NASDAQ_Dashboard.gif" alt="Aperçu animé — Actions IA NASDAQ" data-i18n-alt="nasdaqVisual" loading="lazy" decoding="async">
+            </button>
+            <span class="visual-caption">NASDAQ · AI STOCKS</span>
+          </div>
+          <div class="project-copy">
+            <p class="project-label" data-i18n="nasdaqLabel">Finance · IA &amp; analyse de marché</p>
+            <h3 data-i18n="nasdaqTitle">Actions IA du NASDAQ</h3>
+            <p class="project-description" data-i18n="nasdaqDescription">Analyse de 25 valeurs IA du NASDAQ, qui croise indicateurs techniques, fondamentaux et comparaisons sectorielles pour repérer vite les opportunités.</p>
+            <ul class="tags" aria-label="Thématiques" data-i18n-aria="topicsLabel"><li>Power BI</li><li>NASDAQ</li><li data-i18n="financialAnalysisTag">Analyse financière</li></ul>
+            <div class="project-actions">
+              <button class="button button-outline project-unavailable" type="button" disabled data-i18n="projectOffline">Projet temporairement indisponible</button>
+              <button class="button button-outline pdf-link" type="button" data-pdf="https://drive.google.com/file/d/1sr5UzNa6sIZNnyUDf7bqZILuWZOWprhN/preview" data-title="Documentation — Actions IA NASDAQ" data-title-en="Documentation — NASDAQ AI Stocks"><span data-i18n="readPdfShort">Documentation FR</span></button>
+              <button class="button button-outline pdf-link" type="button" data-pdf="https://drive.google.com/file/d/1ZaezeX0ZdV0X-bZ8EvCEkDGUsVWAniL8/preview" data-title="Documentation en anglais — Actions IA NASDAQ" data-title-en="English documentation — NASDAQ AI Stocks"><span data-i18n="readEnglishShort">Documentation EN</span></button>
+            </div>
+          </div>
+        </article>
+        <article class="project-card" data-category="finance">
+          <div class="project-visual project-media">
+            <button class="project-preview" type="button" aria-label="Agrandir l’aperçu" data-i18n-aria="openPreview" data-title="Aperçu — Infos Marchés Mondiaux" data-title-en="Preview — Global Market News">
+              <img src="Video/Actualites%20des%20marches%20mondiaux.gif" alt="Aperçu animé — Infos Marchés Mondiaux" data-i18n-alt="marketsVisual" loading="lazy" decoding="async">
+            </button>
+            <span class="visual-caption">GLOBAL MARKET NEWS</span>
+          </div>
+          <div class="project-copy">
+            <p class="project-label" data-i18n="marketsLabel">Finance · Veille des marchés</p>
+            <h3 data-i18n="marketsTitle">Infos Marchés Mondiaux</h3>
+            <p class="project-description" data-i18n="marketsDescription">80 articles financiers classés en 8 catégories et 4 rubriques, pour une veille centralisée qui va à l’essentiel.</p>
+            <ul class="tags" aria-label="Thématiques" data-i18n-aria="topicsLabel"><li>Power BI</li><li data-i18n="marketNewsTag">Actualité financière</li><li data-i18n="marketAnalysisTag">Marchés mondiaux</li></ul>
+            <div class="project-actions">
+              <button class="button button-outline project-unavailable" type="button" disabled data-i18n="projectOffline">Projet temporairement indisponible</button>
+              <button class="button button-outline pdf-link" type="button" data-pdf="https://drive.google.com/file/d/1rVNTSHK0zFBOrpowoH1ZJIqTj-AFBBmy/preview" data-title="Documentation — Infos Marchés Mondiaux" data-title-en="Documentation — Global Market News"><span data-i18n="readPdfShort">Documentation FR</span></button>
+              <button class="button button-outline pdf-link" type="button" data-pdf="https://drive.google.com/file/d/1bSDYAwGoV2TuCCHAkzc0YybBtsgvU4JW/preview" data-title="Documentation en anglais — Infos Marchés Mondiaux" data-title-en="English documentation — Global Market News"><span data-i18n="readEnglishShort">Documentation EN</span></button>
+            </div>
+          </div>
+        </article>
+        <article class="project-card" data-category="finance">
+          <div class="project-visual project-media">
+            <button class="project-preview" type="button" aria-label="Agrandir l’aperçu" data-i18n-aria="openPreview" data-title="Aperçu — Listes de suivi boursier" data-title-en="Preview — Stock Market Watchlists">
+              <img src="Video/Listes_de_suivi_boursier_effet.gif" alt="Aperçu animé — Listes de suivi boursier" data-i18n-alt="watchlistsVisual" loading="lazy" decoding="async">
+            </button>
+            <span class="visual-caption">STOCK MARKET WATCHLISTS</span>
+          </div>
+          <div class="project-copy">
+            <p class="project-label" data-i18n="watchlistsLabel">Finance · Analyse boursière</p>
+            <h3 data-i18n="watchlistsTitle">Listes de suivi boursier</h3>
+            <p class="project-description" data-i18n="watchlistsDescription">24 listes de suivi et plus de 25 listes populaires pour comparer cours, variations, volumes et capitalisations d’un coup d’œil.</p>
+            <ul class="tags" aria-label="Thématiques" data-i18n-aria="topicsLabel"><li>Power BI</li><li data-i18n="watchlistsTag">Listes de suivi</li><li data-i18n="marketAnalysisTag">Marchés financiers</li></ul>
+            <div class="project-actions">
+              <button class="button button-outline project-unavailable" type="button" disabled data-i18n="projectOffline">Projet temporairement indisponible</button>
+              <button class="button button-outline pdf-link" type="button" data-pdf="https://drive.google.com/file/d/1ma_DmhqZYU8yhVb70uoFCjZvntLhA0OR/preview" data-title="Documentation — Listes de suivi boursier" data-title-en="Documentation — Stock Market Watchlists"><span data-i18n="readPdfShort">Documentation FR</span></button>
+              <button class="button button-outline pdf-link" type="button" data-pdf="https://drive.google.com/file/d/1H6of542k7WhvbQrWYpEEUC6IxFdcVFZ3/preview" data-title="Documentation en anglais — Listes de suivi boursier" data-title-en="English documentation — Stock Market Watchlists"><span data-i18n="readEnglishShort">Documentation EN</span></button>
+            </div>
+          </div>
+        </article>
+        
+      </div>
+    </section>
+
+    <section class="certifications-section band band-b" id="certifications" aria-labelledby="certifications-title">
+      <div class="section-heading">
+        <div>
+          <!-- <p class="eyebrow" data-i18n="certificationsEyebrow">Certifications</p> -->
+          <h2 id="certifications-title" data-i18n="certificationsTitle">Mes certifications</h2>
+        </div>
+      </div>
+      <div class="certifications-grid">
+        <article class="certification-card">
+          <img class="certification-thumbnail" src="https://drive.google.com/thumbnail?id=1codJrFZmGawVfw86aDQQthREBUe9R0-_&amp;sz=w2000" alt="Certificat Power BI Data Analyst Associate (PL-300)" loading="lazy" decoding="async">
+          <div><h3>Power BI Data Analyst Associate (PL-300)</h3><p class="certification-provider">Microsoft</p><span class="certification-status" data-i18n="certificationObtained">Obtenue</span><button class="certification-link cert-view" type="button" data-cert="https://drive.google.com/thumbnail?id=1codJrFZmGawVfw86aDQQthREBUe9R0-_&amp;sz=w2000" data-title="Certification — Power BI Data Analyst Associate (PL-300)" data-title-en="Certification — Power BI Data Analyst Associate (PL-300)"><span data-i18n="viewCertification">Voir la certification</span><span aria-hidden="true">→</span></button></div>
+        </article>
+        <article class="certification-card">
+          <img class="certification-thumbnail" src="https://drive.google.com/thumbnail?id=1STfqnlhGb_Qs6NTknsOxmldDNi0wnF2x&amp;sz=w2000" alt="Certificat Power BI Data de DataCoach" loading="lazy" decoding="async">
+          <div><h3>Power BI</h3><p class="certification-provider">DataCoach</p><span class="certification-status" data-i18n="certificationObtained">Obtenue</span><button class="certification-link cert-view" type="button" data-cert="https://drive.google.com/thumbnail?id=1STfqnlhGb_Qs6NTknsOxmldDNi0wnF2x&amp;sz=w2000" data-title="Certification — Power BI" data-title-en="Certification — Power BI"><span data-i18n="viewCertification">Voir la certification</span><span aria-hidden="true">→</span></button></div>
+        </article>
+        <article class="certification-card">
+          <img class="certification-thumbnail" src="https://drive.google.com/thumbnail?id=10iYWjqa5w9gKM1sIGPPsLv27kkyYi8cf&amp;sz=w2000" alt="Certificat Google Data Analytics" loading="lazy" decoding="async">
+          <div><h3>Google Data Analytics</h3><p class="certification-provider">Google · Coursera</p><span class="certification-status" data-i18n="certificationObtained">Obtenue</span><button class="certification-link cert-view" type="button" data-cert="https://drive.google.com/thumbnail?id=10iYWjqa5w9gKM1sIGPPsLv27kkyYi8cf&amp;sz=w2000" data-title="Certification — Google Data Analytics" data-title-en="Certification — Google Data Analytics"><span data-i18n="viewCertification">Voir la certification</span><span aria-hidden="true">→</span></button></div>
+        </article>
+        <article class="certification-card">
+          <img class="certification-thumbnail" src="https://drive.google.com/thumbnail?id=1bbwLSFNS6KBvsoDwHp9DK3X1JQEbu2rA&amp;sz=w2000" alt="Certificat IBM Python for Data Science" loading="lazy" decoding="async">
+          <div><h3>Python for Data Science</h3><p class="certification-provider">IBM</p><span class="certification-status" data-i18n="certificationObtained">Obtenue</span><button class="certification-link cert-view" type="button" data-cert="https://drive.google.com/thumbnail?id=1bbwLSFNS6KBvsoDwHp9DK3X1JQEbu2rA&amp;sz=w2000" data-title="Certification — Python for Data Science" data-title-en="Certification — Python for Data Science"><span data-i18n="viewCertification">Voir la certification</span><span aria-hidden="true">→</span></button></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="skills-section band band-a" id="competences" aria-labelledby="skills-title">
+      <div class="section-heading">
+        <div>
+          <!-- <p class="eyebrow" data-i18n="skillsEyebrow">Compétences</p> -->
+          <h2 id="skills-title" data-i18n="skillsTitle">Compétences techniques</h2>
+          <!-- <p class="skills-description" data-i18n="skillsDescription">Les outils mis en évidence sont ceux que j’utilise au quotidien.</p> -->
+        </div>
+      </div>
+      <div class="term glass"><span class="p">$</span><span data-i18n="skillsCommand">SELECT competence FROM profil WHERE niveau = 'opérationnel';</span><span class="cur" aria-hidden="true"></span></div>
+      <div class="skills" id="skillsGrid"></div>
+      <div class="portfolio-cta" aria-label="Portfolio complet" data-i18n-aria="portfolioComplete">
+        <div>
+          <p class="eyebrow" data-i18n="portfolioEyebrow">Pour aller plus loin</p>
+          <h2 data-i18n="portfolioTitle">Mon parcours complet, à votre rythme.</h2>
+          <p data-i18n="portfolioDescription">Expériences, compétences, formations et contact : tout le reste de mon portfolio est ici.</p>
+        </div>
+        <a class="button button-primary" href="details.html"><span data-i18n="viewPortfolio">Consulter tout mon portfolio</span></a>
+      </div>
+    </section>
+
+
+    <section class="contact-section band band-b" id="contact" aria-labelledby="contact-title">
+      <div class="contact-heading">
+        <!-- <p class="eyebrow" data-i18n="contactEyebrow">Contact</p> -->
+        <h2 id="contact-title" data-i18n="contactTitle">Une opportunité ? Échangeons.</h2>
+        <p data-i18n="contactDescription">Je recherche un stage, un CDD ou un CDI en Data Analyse, Data Management ou gouvernance des données.</p>
+      </div>
+      <div class="contact-panel">
+        <form id="contactForm" novalidate>
+          <div class="contact-fields">
+            <div class="contact-field"><label for="nom" data-i18n="lastName">Nom</label><input id="nom" autocomplete="family-name" data-ph="lastNamePlaceholder" required></div>
+            <div class="contact-field"><label for="prenom" data-i18n="firstName">Prénom</label><input id="prenom" autocomplete="given-name" data-ph="firstNamePlaceholder" required></div>
+            <div class="contact-field"><label for="email">Email</label><input id="email" type="email" autocomplete="email" data-ph="emailPlaceholder" required></div>
+            <div class="contact-field"><label for="tel" data-i18n="phone">Téléphone</label><input id="tel" type="tel" autocomplete="tel" data-ph="phonePlaceholder"></div>
+            <div class="contact-field contact-field-full"><label for="sujet" data-i18n="subject">Sujet</label><input id="sujet" data-ph="subjectPlaceholder" required></div>
+            <div class="contact-field contact-field-full"><label for="message" data-i18n="message">Message</label><textarea id="message" data-ph="messagePlaceholder" required></textarea></div>
+          </div>
+          <input type="checkbox" name="botcheck" id="botcheck" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <label class="contact-consent"><input type="checkbox" id="rgpd" required><span data-i18n="consent">J’accepte que les informations saisies soient utilisées pour me recontacter.</span></label>
+          <button class="button button-primary" type="submit" data-i18n="sendMessage">Envoyer le message</button>
+          <p class="contact-note" id="formNote" role="status" aria-live="polite"></p>
+        </form>
+        <div class="contact-channels">
+          <h3 data-i18n="otherChannels">Autres moyens de contact</h3>
+          <a class="contact-channel" href="mailto:moisekhounmenou@gmail.com"><span class="channel-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span><span><b>Email</b><small>moisekhounmenou@gmail.com</small></span></a>
+          <a class="contact-channel" href="tel:+33751219215"><span class="channel-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span><span><b data-i18n="phone">Téléphone</b><small>+33 7 51 21 92 15</small></span></a>
+          <a class="contact-channel" href="https://www.linkedin.com/in/moisehounmenou/" target="_blank" rel="noopener"><span class="channel-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg></span><span><b>LinkedIn</b><small>in/moisehounmenou</small></span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer band band-a">
+    <span class="foot-sign"><b>Moise Hounmenou</b><small data-i18n="footTagline">Data Analyst · Data × BI × IA</small></span>
+    <span class="footer-meta"><span>© 2026</span><span class="version">Version 3.0</span><span class="visit-counter" id="visitCounter" hidden><b data-count>0</b><span data-i18n="viewCount">vues</span></span></span>
+    <!--<a href="#contact" data-i18n="navContact">Me contacter</a> -->
+  </footer>
+
+  <dialog class="pdf-dialog" id="pdfDialog" aria-labelledby="pdfTitle">
+    <div class="pdf-toolbar">
+      <h2 id="pdfTitle">Documentation du projet</h2>
+      <div class="pdf-toolbar-actions">
+        <div class="pdf-pagination" id="pdfPagination" role="group" aria-label="Pagination du document" data-i18n-aria="paginationGroup">
+          <button class="button button-outline pdf-nav-button" id="prevPdfPage" type="button" aria-label="Page précédente" data-i18n-aria="prevPage" title="Page précédente" data-i18n-title="prevPage">‹</button>
+          <span id="pdfPageNum" aria-live="polite">1 / 1</span>
+          <button class="button button-outline pdf-nav-button" id="nextPdfPage" type="button" aria-label="Page suivante" data-i18n-aria="nextPage" title="Page suivante" data-i18n-title="nextPage">›</button>
+        </div>
+        <div class="preview-zoom-controls" role="group" aria-label="Zoom du document" data-i18n-aria="zoomControls">
+          <button class="button button-outline preview-zoom-button" id="zoomOutPdf" type="button" aria-label="Réduire le zoom" data-i18n-aria="zoomOut">−</button>
+          <span id="pdfZoomLevel" aria-live="polite">100 %</span>
+          <button class="button button-outline preview-zoom-button" id="zoomInPdf" type="button" aria-label="Agrandir le zoom" data-i18n-aria="zoomIn">+</button>
+        </div>
+        <button class="button button-outline preview-zoom-button preview-recenter-button" id="recenterPdf" type="button" aria-label="Recentrer" data-i18n-aria="recenter" title="Recentrer" data-i18n-title="recenter">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+        </button>
+        <button class="button button-outline pdf-size-toggle" id="togglePdfSize" type="button" aria-pressed="false" aria-label="Agrandir le document" data-i18n-aria="expandViewerLabel"><span data-i18n="expandViewer">Agrandir</span></button>
+        <button class="button button-outline pdf-close" id="closePdf" type="button"><span data-i18n="close">Fermer</span> <span aria-hidden="true">×</span></button>
+      </div>
+    </div>
+    <div class="pdf-dialog-content" id="pdfDialogContent">
+      <div class="pdf-canvas-container" id="pdfCanvasContainer">
+        <canvas id="pdfCanvas"></canvas>
+        <div class="pdf-frame-wrapper" id="pdfFrameWrapper">
+          <iframe id="pdfFrame" title="Documentation PDF" src="about:blank"></iframe>
+        </div>
+        <div class="pdf-pan-overlay" id="pdfPanOverlay"></div>
+      </div>
+      <div class="pdf-loading-indicator" id="pdfLoading">
+        <div class="pdf-spinner"></div>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="preview-dialog" id="previewDialog" aria-labelledby="previewTitle">
+    <div class="pdf-toolbar">
+      <h2 id="previewTitle"></h2>
+      <div class="pdf-toolbar-actions">
+        <div class="preview-zoom-controls" role="group" aria-label="Zoom de l’aperçu" data-i18n-aria="zoomControls">
+          <button class="button button-outline preview-zoom-button" id="zoomOutPreview" type="button" aria-label="Réduire le zoom" data-i18n-aria="zoomOut">−</button>
+          <span id="previewZoomLevel" aria-live="polite">100 %</span>
+          <button class="button button-outline preview-zoom-button" id="zoomInPreview" type="button" aria-label="Agrandir le zoom" data-i18n-aria="zoomIn">+</button>
+        </div>
+        <button class="button button-outline preview-zoom-button preview-recenter-button" id="recenterPreview" type="button" aria-label="Recentrer" data-i18n-aria="recenter" title="Recentrer" data-i18n-title="recenter">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+        </button>
+        <button class="button button-outline pdf-size-toggle" id="togglePreviewSize" type="button" aria-pressed="false" aria-label="Agrandir l’aperçu" data-i18n-aria="expandPreviewLabel"><span data-i18n="expandViewer">Agrandir</span></button>
+        <button class="button button-outline pdf-close" id="closePreview" type="button"><span data-i18n="close">Fermer</span> <span aria-hidden="true">×</span></button>
+      </div>
+    </div>
+    <div class="preview-dialog-content"><img id="previewImage" alt=""></div>
+  </dialog>
+
+  <dialog class="preview-dialog video-dialog" id="videoDialog" aria-labelledby="videoTitle">
+    <div class="pdf-toolbar">
+      <h2 id="videoTitle"></h2>
+      <div class="pdf-toolbar-actions">
+        <button class="button button-outline pdf-close" id="closeVideo" type="button"><span data-i18n="close">Fermer</span> <span aria-hidden="true">×</span></button>
+      </div>
+    </div>
+    <div class="video-dialog-content" id="videoContent"></div>
+  </dialog>
+
+  <script src="js/site-config.js"></script>
+  <script src="js/site-extras.js" defer></script>
+  <script src="js/pdf.min.js"></script>
+  <script src="js/skills-data.js"></script>
+  <script src="js/home.js" defer></script>
+</body>
+</html>

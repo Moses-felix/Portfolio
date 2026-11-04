@@ -1,0 +1,10 @@
+Les cinq aperçus GIF ci-dessous sont associés aux projets de index.html :
+
+- Crypto_Market_Dashboard.gif
+- Actions_IA_NASDAQ_Dashboard.gif
+- Actualites des marches mondiaux.gif
+- Listes_de_suivi_boursier_effet.gif
+- Supermarché_Ventes_dashboard.gif
+
+Le projet Postula utilise désormais un bouton vers un PDF de présentation.
+Ajoutez le fichier sous documents/Description_Postula.pdf pour activer le bouton.
