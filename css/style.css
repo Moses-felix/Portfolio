@@ -68,6 +68,10 @@ header.nav{position:fixed;top:calc(env(safe-area-inset-top,0px) + 12px);left:0;r
 .nav-actions{display:flex;gap:.5rem;align-items:center}
 .icon-btn{min-width:40px;height:40px;padding:0 .6rem;border-radius:50%;border:1px solid var(--border);background:var(--glass);color:var(--ink);cursor:pointer;display:grid;place-items:center;font-size:.82rem;font-family:var(--mono);font-weight:600}
 .icon-btn:hover{border-color:var(--accent);color:var(--accent)}
+#themeBtn,#langBtn{animation:portfolio-control-hint 1s ease-in-out 10}
+#langBtn{animation-delay:.25s}
+#themeBtn:hover,#themeBtn:focus-visible,#langBtn:hover,#langBtn:focus-visible{animation:none}
+@keyframes portfolio-control-hint{50%{transform:scale(1.1);box-shadow:0 0 0 5px var(--glow)}}
 #menuBtn{display:none;border-radius:12px}
 .mobile-menu{display:none}
 @media (max-width:1120px){

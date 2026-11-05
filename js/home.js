@@ -8,10 +8,10 @@
       m2t: 'Fiabiliser', m2: 'Je nettoie, contrôle et documente pour que chaque chiffre soit juste et traçable.',
       m3t: 'Analyser', m3: 'Je modélise et j’explore pour faire ressortir tendances, écarts et signaux faibles.',
       m4t: 'Décider', m4: 'Je restitue dans des tableaux de board clairs qui aident les équipes à passer à l’action.',
-      introBio: 'Data Analyst &amp; Data Manager, je cumule <strong>3 ans d’expérience en data</strong> (ETL, SQL, BigQuery, Power BI, qualité et gouvernance des données) auprès de grands comptes comme <strong> Carrefour, BCA Expertise, DITP</strong>, des notions dans le <strong>trading et la finance</strong> après <strong>3 ans en développement d’applications</strong>. Ce triple profil me permet de construire des pipelines fiables et des outils que les équipes métier utilisent vraiment.',
+      introBio: 'Data Analyst &amp; Business Analyst, je cumule <strong>3 ans d’expérience en data</strong> (ETL, SQL, BigQuery, Power BI, qualité et gouvernance des données) auprès de grands comptes comme <strong> Carrefour, BCA Expertise, DITP</strong>, des notions dans le <strong>trading et la finance</strong> après <strong>3 ans en développement d’applications</strong>. Ce triple profil me permet de construire des pipelines fiables et des outils que les équipes métier utilisent vraiment.',
       stat1b: '3+ ans', stat1: 'd’expérience en data', stat2b: '3 ans', stat2: 'en développement d’applications', stat3: 'Données traitées', stat4: 'Verbatims analysés',
       photoAlt: 'Photo de Moise Hounmenou', skipLink: 'Aller au contenu',
-      readPdfShort: 'Documentation FR', readEnglishShort: 'Documentation EN',
+      readPdfShort: 'Modop FR', readEnglishShort: 'Modop EN',
       filterLabel: 'Filtrer les réalisations', filterAll: 'Tous', filterFinance: 'Finance', filterCrypto: 'Crypto', filterRetail: 'Retail', filterApps: 'Applications',
       loading: 'Chargement des données', backTop: 'Retour en haut', themeToggle: 'Thème clair ou sombre',
       homeLabel: 'Accueil, Moise Hounmenou', navLabel: 'Navigation principale', quickLinks: 'CV et contact rapide',
@@ -25,7 +25,7 @@
       projectSelection: 'Sélection de projets', myProjects: 'Mes réalisations',
       cryptoLabel: 'Projet data · Analyse & visualisation',
       cryptoTitle: 'Crypto Market Dashboard',
-      cryptoDescription: 'Suivi du marché crypto dans Power BI : cours, capitalisations et volumes des principaux actifs, avec des filtres interactifs pour comparer les tendances.',
+      cryptoDescription: 'Suivi du marché crypto : cours, capitalisations et volumes des principaux actifs, pour comparer les tendances.',
       cryptoTagAnalysis: 'Analyse de données', cryptoTagMarket: 'Marché crypto',
       cryptoVisual: 'Aperçu animé du tableau de bord Crypto Market',
       nasdaqLabel: 'Finance · IA & analyse de marché',
@@ -64,14 +64,14 @@
       readPdf: 'Lire la documentation PDF', readEnglishVersion: 'Lire la version anglaise',
       viewProject: 'Test en ligne',
       projectOffline: 'Projet temporairement indisponible',
-      documentationFrPlaceholder: 'Documentation FR (à ajouter)', documentationEnPlaceholder: 'Documentation EN (à ajouter)',
+      documentationFrPlaceholder: 'Modop FR (à ajouter)', documentationEnPlaceholder: 'Modop EN (à ajouter)',
       playProjectVideo: 'Lire la vidéo de présentation du projet',
       postulaLabel: 'Application · Gestion des candidatures', postulaTitle: 'Postula',
       postulaDescription: 'Postula accompagne la recherche d’emploi en aidant à organiser ses candidatures et à suivre ses démarches au même endroit.',
       postulaVisual: 'Aperçu du projet Postula', postulaTag1: 'Application', postulaTag2: 'Présentation du projet',
       postulaDocumentButton: 'Voir la description du projet', viewCode: 'Code sur GitHub',
       jobIntelligenceLabel: 'Application · Recherche et ciblage d’offres', jobIntelligenceTitle: 'Job Intelligence',
-      jobIntelligenceDescription: 'Job Intelligence met l’intelligence artificielle au service de la recherche d’emploi pour aider à explorer les opportunités et mieux cibler ses candidatures.',
+      jobIntelligenceDescription: 'Cet agent met l’IA au service de la recherche d’emploi pour aider à explorer les opportunités et mieux cibler ses candidatures.',
       electronicsLabel: 'Retail · Analyse commerciale', electronicsTitle: 'Electronics',
       electronicsDescription: 'Analyse des ventes d’équipements électroniques pour suivre le chiffre d’affaires et la performance commerciale.',
       electronicsVisual: 'Aperçu animé du projet Electronics',
@@ -114,10 +114,10 @@
       m2t: 'Validate', m2: 'I clean, check and document the data so every figure is accurate and traceable.',
       m3t: 'Analyse', m3: 'I model and explore the data to surface trends, gaps and weak signals.',
       m4t: 'Decide', m4: 'I deliver clear dashboards that help teams take action.',
-      introBio: 'Data Analyst &amp; Data Manager with <strong>3 years of experience in data</strong> (ETL, SQL, BigQuery, Power BI, data quality and governance) for major clients in retail, insurance and the public sector, combined experience in <strong>finance and trading</strong> after <strong>3 years in application development</strong>. This triple background lets me build reliable pipelines and tools that business teams actually use.',
+      introBio: 'Data Analyst &amp; Business Analyst with <strong>3 years of experience in data</strong> (ETL, SQL, BigQuery, Power BI, data quality and governance) for major clients in retail, insurance and the public sector, combined experience in <strong>finance and trading</strong> after <strong>3 years in application development</strong>. This triple background lets me build reliable pipelines and tools that business teams actually use.',
       stat1b: '3+ years', stat1: 'of experience in data', stat2b: '3 years', stat2: 'in application development', stat3: 'Data processed', stat4: 'analyzed verbatims',
       photoAlt: 'Photo of Moise Hounmenou', skipLink: 'Skip to content',
-      readPdfShort: 'Documentation FR', readEnglishShort: 'Documentation EN',
+      readPdfShort: 'Modop FR', readEnglishShort: 'Modop EN',
       filterLabel: 'Filter projects', filterAll: 'All', filterFinance: 'Finance', filterCrypto: 'Crypto', filterRetail: 'Retail', filterApps: 'Apps',
       loading: 'Loading data', backTop: 'Back to top', themeToggle: 'Toggle light or dark theme',
       homeLabel: 'Home, Moise Hounmenou', navLabel: 'Main navigation', quickLinks: 'CV and quick contact',
@@ -131,7 +131,7 @@
       projectSelection: 'Selected projects', myProjects: 'My projects',
       cryptoLabel: 'Data project · Analytics & visualisation',
       cryptoTitle: 'Crypto Market Dashboard',
-      cryptoDescription: 'Crypto market tracking in Power BI: prices, market caps and volumes of the main assets, with interactive filters to compare trends.',
+      cryptoDescription: 'Crypto market tracking : prices, market caps and volumes of the main assets, to compare trends.',
       cryptoTagAnalysis: 'Data analysis', cryptoTagMarket: 'Crypto market',
       cryptoVisual: 'Animated preview of the Crypto Market dashboard',
       nasdaqLabel: 'Finance · AI & market analysis',
@@ -170,14 +170,14 @@
       readPdf: 'Read the PDF documentation', readEnglishVersion: 'Read the English version',
       viewProject: 'Test online',
       projectOffline: 'Project temporarily unavailable',
-      documentationFrPlaceholder: 'FR documentation (to add)', documentationEnPlaceholder: 'EN documentation (to add)',
+      documentationFrPlaceholder: 'Modop FR (to add)', documentationEnPlaceholder: 'Modop EN (to add)',
       playProjectVideo: 'Play the project presentation video',
       postulaLabel: 'Application · Job application tracker', postulaTitle: 'Postula',
       postulaDescription: 'Postula supports the job search by helping organise applications and track progress in one place.',
       postulaVisual: 'Preview of the Postula project', postulaTag1: 'Application', postulaTag2: 'Project presentation',
       postulaDocumentButton: 'View project description', viewCode: 'Code on GitHub',
       jobIntelligenceLabel: 'Application · Job search and offer targeting', jobIntelligenceTitle: 'Job Intelligence',
-      jobIntelligenceDescription: 'Job Intelligence applies artificial intelligence to job searching, helping users explore opportunities and target applications more effectively.',
+      jobIntelligenceDescription: 'This agent applies IA to job searching, helping users explore opportunities and target applications more effectively.',
       electronicsLabel: 'Retail · Sales analysis', electronicsTitle: 'Electronics',
       electronicsDescription: 'Sales analysis for electronic equipment to monitor revenue and commercial performance.',
       electronicsVisual: 'Animated preview of the Electronics project',
@@ -638,6 +638,12 @@
       var key = element.getAttribute('data-i18n');
       if (strings[key] !== undefined) element.textContent = strings[key];
     });
+    document.querySelectorAll('[data-i18n="readPdfShort"]').forEach(function (label) {
+      label.parentElement.hidden = lang !== 'fr';
+    });
+    document.querySelectorAll('[data-i18n="readEnglishShort"]').forEach(function (label) {
+      label.parentElement.hidden = lang !== 'en';
+    });
     document.querySelectorAll('[data-i18n-html]').forEach(function (element) {
       var key = element.getAttribute('data-i18n-html');
       if (strings[key] !== undefined) element.innerHTML = strings[key];
@@ -841,6 +847,15 @@
   });
   // Filtres des réalisations
   var projectCards = Array.prototype.slice.call(document.querySelectorAll('#projectsGrid .project-card'));
+  projectCards.forEach(function (card) {
+    var testLink = card.querySelector('.project-link[href]');
+    if (!testLink) return;
+    card.classList.add('is-testable');
+    card.addEventListener('click', function (event) {
+      if (event.target.closest('a, button, input, select, textarea, summary')) return;
+      testLink.click();
+    });
+  });
   function applyProjectFilter(filter) {
     var visible = projectCards.filter(function (card) {
       var show = filter === 'all' || card.getAttribute('data-category') === filter;
