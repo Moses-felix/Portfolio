@@ -401,7 +401,7 @@ footer{border-top:1px solid var(--border);padding:3rem 0 2rem}
 .foot-identity .logo{align-items:flex-start}
 .foot-identity .logo small{color:var(--accent)}
 .foot-identity .footer-meta{display:grid;justify-items:start;gap:3px;margin-left:46px;color:var(--muted);font-family:var(--mono);font-size:.76rem}
-.foot-identity .visit-counter{align-items:baseline;gap:5px}
+.foot-identity .visit-counter{align-items:center;gap:5px}
 .foot p{color:var(--muted);font-size:.92rem;margin-top:.8rem;max-width:22rem}
 .foot h4{font-size:.95rem;margin-bottom:.7rem}
 .foot nav a{display:block;color:var(--muted);text-decoration:none;font-size:.92rem;padding:.2rem 0}
@@ -435,7 +435,6 @@ footer{border-top:1px solid var(--border);padding:3rem 0 2rem}
 .copy{align-items:center}
 .visit-counter{display:inline-flex;align-items:center;gap:6px;padding:5px 12px;border:1px solid var(--border);border-radius:999px;background:var(--glass)}
 .visit-counter[hidden]{display:none}
-.visit-counter svg{width:15px;height:15px;color:var(--accent)}
 .visit-counter b{color:var(--ink);font-family:var(--display)}
 .hp-field{position:absolute!important;left:-9999px!important;width:1px;height:1px;opacity:0}
 .visit-counter{padding:0;border:0;background:none}

@@ -457,7 +457,6 @@ button.certification-link { font-family: inherit; cursor: pointer; }
 .foot-mid { display: inline-flex; align-items: center; gap: 14px; justify-self: center; }
 .visit-counter { display: inline-flex; align-items: center; gap: 6px; padding: 5px 12px; border: 1px solid var(--line); border-radius: 999px; background: var(--panel-soft); }
 .visit-counter[hidden] { display: none; }
-.visit-counter svg { width: 15px; height: 15px; color: var(--accent); }
 .visit-counter b { color: var(--text); font-family: "Sora", sans-serif; }
 .hp-field { position: absolute !important; left: -9999px !important; width: 1px; height: 1px; opacity: 0; }
 .visit-counter { padding: 0; border: 0; background: none; }
