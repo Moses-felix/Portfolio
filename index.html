@@ -89,7 +89,10 @@
         <div>
           <h2 id="projects-title" data-i18n="myProjects">Mes réalisations</h2>
         </div>
-        <span class="section-count" id="projectCount">11</span>
+        <div class="projects-heading-meta">
+          <p class="projects-heading-note" role="note"><span class="projects-note-icon" aria-hidden="true">!</span><span data-i18n="projectsHeadingNote">Testez les applications disponibles et visionnez leurs présentations vidéo.</span></p>
+          <span class="section-count" id="projectCount">11</span>
+        </div>
       </div>
       <div class="project-filters" role="group" aria-label="Filtrer les réalisations" data-i18n-aria="filterLabel">
         <button class="filter-btn is-active" type="button" data-filter="all" aria-pressed="true" data-i18n="filterAll">Tous</button>
@@ -151,7 +154,7 @@
             <p class="project-description" data-i18n="postulaDescription">Postula accompagne la recherche d’emploi en aidant à organiser ses candidatures et à suivre ses démarches au même endroit.</p>
             <ul class="tags" aria-label="Thématiques" data-i18n-aria="topicsLabel"><li data-i18n="postulaTag1">Application</li><li data-i18n="aiTag">IA</li><li data-i18n="pythonTag">Python</li><li data-i18n="dataTag">Data</li></ul>
             <div class="project-actions">
-              <a class="button button-primary project-link" data-project="postula" href="https://postula.streamlit.app/" target="_blank" rel="noopener"><span data-i18n="viewProject">Test en ligne</span></a>
+              <a class="button button-primary project-link" data-project="postula" href="https://postula.streamlit.app/" target="_blank" rel="noopener"><span data-i18n="viewProject">Testez en ligne</span></a>
               <button class="button button-outline pdf-link" type="button" data-pdf="https://drive.google.com/file/d/16yP9r-Zgd-79KfpxraExS8O5YuQ9NIop/preview" data-title="Documentation — Postula" data-title-en="Documentation — Postula"><span data-i18n="readPdfShort">Modop FR</span></button>
               <button class="button button-outline pdf-link" type="button" data-pdf="https://drive.google.com/file/d/182m0UicEpI_qhLWHOzccg9_hGJDfsW9g/preview" data-title="Documentation en anglais — Postula" data-title-en="English documentation — Postula"><span data-i18n="readEnglishShort">Modop EN</span></button>
               <a class="button button-outline github-link" href="#" target="_blank" rel="noopener"><span data-i18n="viewCode">Code sur GitHub</span></a>
@@ -172,7 +175,7 @@
             <p class="project-description" data-i18n="cleanerDatasetDescription">Cleaner Dataset prépare les jeux de données pour l’analyse en facilitant leur nettoyage, leur structuration et la vérification de leur qualité.</p>
             <ul class="tags" aria-label="Thématiques" data-i18n-aria="topicsLabel"><li data-i18n="aiTag">IA</li><li data-i18n="dataTag">Data</li><li data-i18n="pythonTag">Python</li><li data-i18n="dataCleaningTag">Nettoyage des données</li></ul>
             <div class="project-actions">
-              <a class="button button-primary project-link" data-project="cleaner-dataset" href="https://cleaner-dataset.streamlit.app/" target="_blank" rel="noopener"><span data-i18n="viewProject">Test en ligne</span></a>
+              <a class="button button-primary project-link" data-project="cleaner-dataset" href="https://cleaner-dataset.streamlit.app/" target="_blank" rel="noopener"><span data-i18n="viewProject">Testez en ligne</span></a>
               <button class="button button-outline pdf-link" type="button" data-pdf="https://drive.google.com/file/d/1KpvA0GJCwx-2ccYJvKNHCCNq0cQhArbx/preview" data-title="Documentation — Cleaner Dataset" data-title-en="Documentation — Cleaner Dataset"><span data-i18n="readPdfShort">Modop FR</span></button>
               <button class="button button-outline pdf-link" type="button" data-pdf="https://drive.google.com/file/d/1WVbxsUIY_gU5aV0CfDiro5u3hgnYgWvx/preview" data-title="Documentation en anglais — Cleaner Dataset" data-title-en="English documentation — Cleaner Dataset"><span data-i18n="readEnglishShort">Modop EN</span></button>
             </div>
@@ -233,7 +236,7 @@
             <p class="project-description" data-i18n="fileInterpreterDescription">Cet agent IA analyse les fichiers transmis pour en extraire les informations utiles et rendre leurs résultats plus faciles à comprendre et à exploiter.</p>
             <ul class="tags" aria-label="Thématiques" data-i18n-aria="topicsLabel"><li data-i18n="aiTag">IA</li><li data-i18n="dataTag">Data</li><li data-i18n="pythonTag">Python</li><li data-i18n="fileAnalysisTag">Analyse de fichiers</li></ul>
             <div class="project-actions">
-              <a class="button button-primary project-link" data-project="file-interpreter" href="https://agent-interpreteur-resultat-fichier.streamlit.app/" target="_blank" rel="noopener"><span data-i18n="viewProject">Test en ligne</span></a>
+              <a class="button button-primary project-link" data-project="file-interpreter" href="https://agent-interpreteur-resultat-fichier.streamlit.app/" target="_blank" rel="noopener"><span data-i18n="viewProject">Testez en ligne</span></a>
               <button class="button button-outline pdf-link" type="button" data-pdf="https://drive.google.com/file/d/1dHiFcADaaeFPy1AsK6iK1fL-ph806Y2G/preview" data-title="Documentation — Agent interpréteur de fichiers" data-title-en="Documentation — File Interpreter Agent"><span data-i18n="readPdfShort">Modop FR</span></button>
               <button class="button button-outline pdf-link" type="button" data-pdf="https://drive.google.com/file/d/11bOdjZtt2QAGb-0zRK8d1T-JtTMkXRHy/preview" data-title="Documentation en anglais — Agent interpréteur de fichiers" data-title-en="English documentation — File Interpreter Agent"><span data-i18n="readEnglishShort">Modop EN</span></button>
             </div>
@@ -329,19 +332,19 @@
       </div>
       <div class="certifications-grid">
         <article class="certification-card">
-          <img class="certification-thumbnail" src="https://drive.google.com/thumbnail?id=1codJrFZmGawVfw86aDQQthREBUe9R0-_&amp;sz=w2000" alt="Certificat Power BI Data Analyst Associate (PL-300)" loading="lazy" decoding="async">
+          <button class="certification-image-button cert-view" type="button" data-cert="https://drive.google.com/thumbnail?id=1codJrFZmGawVfw86aDQQthREBUe9R0-_&amp;sz=w2000" data-title="Certification — Power BI Data Analyst Associate (PL-300)" data-title-en="Certification — Power BI Data Analyst Associate (PL-300)" aria-label="Voir la certification Power BI Data Analyst Associate (PL-300)"><img class="certification-thumbnail" src="https://drive.google.com/thumbnail?id=1codJrFZmGawVfw86aDQQthREBUe9R0-_&amp;sz=w2000" alt="" loading="lazy" decoding="async"></button>
           <div><h3>Power BI Data Analyst Associate (PL-300)</h3><p class="certification-provider">Microsoft</p><span class="certification-status" data-i18n="certificationObtained">Obtenue</span><button class="certification-link cert-view" type="button" data-cert="https://drive.google.com/thumbnail?id=1codJrFZmGawVfw86aDQQthREBUe9R0-_&amp;sz=w2000" data-title="Certification — Power BI Data Analyst Associate (PL-300)" data-title-en="Certification — Power BI Data Analyst Associate (PL-300)"><span data-i18n="viewCertification">Voir la certification</span><span aria-hidden="true">→</span></button></div>
         </article>
         <article class="certification-card">
-          <img class="certification-thumbnail" src="https://drive.google.com/thumbnail?id=1STfqnlhGb_Qs6NTknsOxmldDNi0wnF2x&amp;sz=w2000" alt="Certificat Power BI Data de DataCoach" loading="lazy" decoding="async">
+          <button class="certification-image-button cert-view" type="button" data-cert="https://drive.google.com/thumbnail?id=1STfqnlhGb_Qs6NTknsOxmldDNi0wnF2x&amp;sz=w2000" data-title="Certification — Power BI" data-title-en="Certification — Power BI" aria-label="Voir la certification Power BI de DataCoach"><img class="certification-thumbnail" src="https://drive.google.com/thumbnail?id=1STfqnlhGb_Qs6NTknsOxmldDNi0wnF2x&amp;sz=w2000" alt="" loading="lazy" decoding="async"></button>
           <div><h3>Power BI</h3><p class="certification-provider">DataCoach</p><span class="certification-status" data-i18n="certificationObtained">Obtenue</span><button class="certification-link cert-view" type="button" data-cert="https://drive.google.com/thumbnail?id=1STfqnlhGb_Qs6NTknsOxmldDNi0wnF2x&amp;sz=w2000" data-title="Certification — Power BI" data-title-en="Certification — Power BI"><span data-i18n="viewCertification">Voir la certification</span><span aria-hidden="true">→</span></button></div>
         </article>
         <article class="certification-card">
-          <img class="certification-thumbnail" src="https://drive.google.com/thumbnail?id=10iYWjqa5w9gKM1sIGPPsLv27kkyYi8cf&amp;sz=w2000" alt="Certificat Google Data Analytics" loading="lazy" decoding="async">
+          <button class="certification-image-button cert-view" type="button" data-cert="https://drive.google.com/thumbnail?id=10iYWjqa5w9gKM1sIGPPsLv27kkyYi8cf&amp;sz=w2000" data-title="Certification — Google Data Analytics" data-title-en="Certification — Google Data Analytics" aria-label="Voir la certification Google Data Analytics"><img class="certification-thumbnail" src="https://drive.google.com/thumbnail?id=10iYWjqa5w9gKM1sIGPPsLv27kkyYi8cf&amp;sz=w2000" alt="" loading="lazy" decoding="async"></button>
           <div><h3>Google Data Analytics</h3><p class="certification-provider">Google · Coursera</p><span class="certification-status" data-i18n="certificationObtained">Obtenue</span><button class="certification-link cert-view" type="button" data-cert="https://drive.google.com/thumbnail?id=10iYWjqa5w9gKM1sIGPPsLv27kkyYi8cf&amp;sz=w2000" data-title="Certification — Google Data Analytics" data-title-en="Certification — Google Data Analytics"><span data-i18n="viewCertification">Voir la certification</span><span aria-hidden="true">→</span></button></div>
         </article>
         <article class="certification-card">
-          <img class="certification-thumbnail" src="https://drive.google.com/thumbnail?id=1bbwLSFNS6KBvsoDwHp9DK3X1JQEbu2rA&amp;sz=w2000" alt="Certificat IBM Python for Data Science" loading="lazy" decoding="async">
+          <button class="certification-image-button cert-view" type="button" data-cert="https://drive.google.com/thumbnail?id=1bbwLSFNS6KBvsoDwHp9DK3X1JQEbu2rA&amp;sz=w2000" data-title="Certification — Python for Data Science" data-title-en="Certification — Python for Data Science" aria-label="Voir la certification IBM Python for Data Science"><img class="certification-thumbnail" src="https://drive.google.com/thumbnail?id=1bbwLSFNS6KBvsoDwHp9DK3X1JQEbu2rA&amp;sz=w2000" alt="" loading="lazy" decoding="async"></button>
           <div><h3>Python for Data Science</h3><p class="certification-provider">IBM</p><span class="certification-status" data-i18n="certificationObtained">Obtenue</span><button class="certification-link cert-view" type="button" data-cert="https://drive.google.com/thumbnail?id=1bbwLSFNS6KBvsoDwHp9DK3X1JQEbu2rA&amp;sz=w2000" data-title="Certification — Python for Data Science" data-title-en="Certification — Python for Data Science"><span data-i18n="viewCertification">Voir la certification</span><span aria-hidden="true">→</span></button></div>
         </article>
       </div>
@@ -401,7 +404,7 @@
 
   <footer class="site-footer band band-a">
     <span class="foot-sign"><b>Moise Hounmenou</b><small data-i18n="footTagline">Data Analyst · Data × BI × IA</small></span>
-    <span class="footer-meta"><span>© 2026</span><span class="version">Version 3.0</span><span class="visit-counter" id="visitCounter" hidden><b data-count>0</b><span data-i18n="viewCount">vues</span></span></span>
+    <span class="footer-meta"><span>© 2026</span><span class="version">Version 3.0</span><span class="visit-counter" id="visitCounter" hidden><b data-count>0</b><span data-i18n="viewCount"></span></span></span>
     <!--<a href="#contact" data-i18n="navContact">Me contacter</a> -->
   </footer>
 
